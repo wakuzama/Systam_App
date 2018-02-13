@@ -1,0 +1,51 @@
+page-login {
+
+    align-content: center;
+
+ .background{
+    //  background-color: cadetblue ;
+     height: 95%;
+     }
+
+ .input-center{
+     margin-top: 60% ;
+ }
+ .item-space{
+     margin-top: 10% ;
+     background-color:#444444 ;
+ }
+
+.buton-space{
+    margin-top: 15% ;
+    height:40px;
+    background-color:#007BA5;
+    padding-left: 0px ;
+    padding-right: 0px ;
+
+}
+
+.buton-position{
+    // margin-top: 8%;
+}
+ .imgSize{
+     height:35px;
+     width: 80% ;
+     margin-left: 25px;
+     margin-top: 30px;
+    //  background-color: aqua ;
+ }
+
+ .letter-space{
+     letter-spacing: 3px ;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ }
+
+ .input-color{
+    color: #ffffff ;
+ }
+
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:#c3c3c3 ;
+    opacity: 1; /* Firefox */
+}
+}

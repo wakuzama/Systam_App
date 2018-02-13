@@ -1,0 +1,60 @@
+
+
+    
+    
+    
+
+<ion-content  has-bouncing="false">
+  <ion-card style="position: fixed;" class="background" >
+    <ion-card-header ><b style="text-align:center"> </b></ion-card-header>
+    <div class="imgSize"><img src ="../assets/imgs/logo-new.png"></div>
+
+      <ion-card-content class="background" >
+       <form [formGroup]="formgroup">
+        <ion-list class="input-center"  >
+             <ion-item style="background-color:#444444 ;" >
+                <ion-input type="text" placeholder="U s e r n a m e" class="form-control" 
+                formControlName="username"  style="background-color:#444444 ;" class="input-color" > </ion-input>
+             </ion-item>
+
+             <ion-item *ngIf ="username.hasError('required')&& username.touched" >
+               <p>*Frist Name is Required</p>
+             </ion-item>
+
+             <ion-item  class="item-space">
+                <ion-input type="password" formControlName="password" placeholder="C o n t r a s e ñ a" class="input-color" > </ion-input>
+             </ion-item>
+
+             <ion-item *ngIf ="password.hasError('required')&& password.touched" >
+              <p>*Password is Required</p>
+            </ion-item>
+
+             <button ion-button full   (click)="login1(formgroup)" class="buton-space" >ENTRAR</button> 
+
+             <!-- <ion-item style="text-align: center" "> 
+               (click)="login(logindata)" -->
+           
+         <!-- <ion-item style="text-align: center"> -->
+              <!-- <button ion-button full  color="ora" (click)="register()" tappable  > SIGN UP </button> -->
+           <!-- </ion-item> -->
+
+           <button ion-button (click)="password1()" full clear  style="text-transform: none;" class="buton-position"><a href="#" >Contraseña olvidada?</a></button>
+        <!-- <p class="a"> Forgot your login Details ?</p> 
+       <p class="a"> <b> Get help signing in </b> </p> -->
+        <!-- <button ion-button block outline color="lightgreay" ></button>
+
+        <p style="text-align:center">OR</p>
+
+        <button ion-button block color="facebook" (click)="fbload()" icon-left tappable >
+           <ion-icon name ="logo-facebook"></ion-icon>  Signing facebook
+        </button>
+        <br>
+        <button ion-button block color="danger" (click)="fbload()" icon-left tappable >
+            <ion-icon name ="logo-googleplus"></ion-icon>  Signing Google
+         </button> -->
+        </ion-list>   
+      </form>
+      </ion-card-content>
+  </ion-card>
+   <!--<button ion-button  clear color="light"  secondry (click) ="signup()" ><b>Don't have an account ? Sign up</b></button>  -->
+</ion-content>
